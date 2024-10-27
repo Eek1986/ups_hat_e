@@ -10,3 +10,5 @@ Instructions:
 You need to install this via HACS.
 
 https://my.home-assistant.io/redirect/hacs_repository/?owner=orgjvr&repository=ups_hat_e&category=Integration
+
+<img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.">
