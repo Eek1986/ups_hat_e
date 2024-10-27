@@ -8,3 +8,5 @@ I have used most of the functionality from the Waveshare wiki for this device.
 
 Instructions:
 You need to install this via HACS.
+
+https://my.home-assistant.io/redirect/hacs_repository/?owner=orgjvr&repository=ups_hat_e&category=Integration
