@@ -1,16 +1,27 @@
-*** HomeAssistant integration for the Waveshare Pi UPS Hat (E).
+This fork from: [Orgjvr/ups_hat_e](https://github.com/Orgjvr/ups_hat_e). Thank him very much
 
-(This is for the E version only. I do not think it is based on an INA219)
-
-I have used most of the functionality from the Waveshare wiki for this device.
-[http](https://www.waveshare.com/wiki/UPS_HAT_(E))
-
+*** HomeAssistant integration for the [Waveshare Pi UPS Hat (E)](https://www.waveshare.com/wiki/UPS_HAT_(E)).
 
 Instructions:
-You need to install this via HACS.
+1) Copy component from git to HA "/homeassistant/custom_components". Connect on ssh:
+   ```bash
+   $ cd /homeassistant/custom_components
+   $ wget https://github.com/Eek1986/ups_hat_e/archive/refs/heads/master.zip
+   $ unzip master.zip
+   $ rm master.zip
+   ```
+2) Config component in configuration.yaml
+   ```
+   #
+   # https://github.com/Eek1986/ups_hat_e
+   #
+   ups_hat_e:
+     scan_interval: 10         # Required, second
+     name: UPS                 # Optional, default=HA Pi UPS
+     unique_id: ups_hat_e      # Optional, default=ha_pi_ups
+     battery_capacity: 5000    # Optional (mAh), default=4800
+     addr: 0x2d                # Optional, default=0x2d
+   ```
+3) Reboot HA.
 
-https://my.home-assistant.io/redirect/hacs_repository/?owner=orgjvr&repository=ups_hat_e&category=Integration
-
-<a href=https://my.home-assistant.io/redirect/hacs_repository/?owner=orgjvr&repository=ups_hat_e&category=Integration>
-<img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.">
-</a>
+P.S. https://github.com/uvjim/rpi_waveshare_ups and the analogs did not work with UPS HAT(E).
