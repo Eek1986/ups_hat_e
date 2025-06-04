@@ -24,4 +24,4 @@ Instructions:
    ```
 3) Reboot HA.
 
-P.S. https://github.com/uvjim/rpi_waveshare_ups, https://community.home-assistant.io/t/custom-integration-waveshare-ups-for-raspberry-pi/577833 and the analogs did not work with UPS HAT(E).
+P.S. [Custom Integration: Waveshare UPS for Raspberry Pi](https://community.home-assistant.io/t/custom-integration-waveshare-ups-for-raspberry-pi/577833) ([rpi_waveshare_ups](https://github.com/uvjim/rpi_waveshare_ups)) and the analogs did not work with UPS HAT(E).
